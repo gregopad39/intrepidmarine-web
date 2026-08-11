@@ -5,9 +5,9 @@ Prototype website for **Intrepid Marine LLC** and domain **intrepidmarine.net**.
 Products featured:
 
 - **Intrepid Mariner**
-- **CRSpit**
-- **MarineServiceTech**
-- **ServiceTech** (ServiceValet brand)
+- **CRS**
+- **Marine Service**
+- **Service Tech** (Service Valet brand)
 
 ## Local preview
 

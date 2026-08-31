@@ -2,8 +2,7 @@
 
 Marketing site for **Intrepid Marine LLC**: a small software company in the commercial marine space, plus consulting.
 
-**Showcase product:** Intrepid Mariner  
-**Also listed:** Marine Service Tech, Service Valet
+**Products:** IntrepidMarine · MarineServiceTech · ServiceValet · CRS
 
 ## Local preview
 
@@ -23,9 +22,10 @@ Upload these into the domain document root (usually `public_html`):
 - `index.html` (and the other HTML pages, `css/`, `js/`, `assets/`)
 - `assets/screenshots/` — drop PNG/JPEGs using the names in `assets/screenshots/README.md`
 - optional `assets/hero/hero-loop.mp4` for the homepage radar/job loop
-- `intrepid-mariner.html`
+- `intrepid-marine.html`
 - `marine-service-tech.html`
 - `service-valet.html`
+- `crs.html`
 - `consulting.html`
 - `products.html`
 - `support.html`
@@ -38,12 +38,13 @@ Keep folder structure. Do not wrap the files in an extra `intrepidmarine-web/` d
 
 | File | Role |
 |------|------|
-| `index.html` | Company + Intrepid Mariner showcase |
-| `intrepid-mariner.html` | Showcase product |
-| `marine-service-tech.html` | Yard / tech app |
-| `service-valet.html` | Land trades app |
+| `index.html` | Company + IntrepidMarine showcase |
+| `intrepid-marine.html` | IntrepidMarine |
+| `marine-service-tech.html` | MarineServiceTech |
+| `service-valet.html` | ServiceValet |
+| `crs.html` | CRS |
 | `consulting.html` | Advisory and branded editions |
-| `products.html` | Three-product hub |
+| `products.html` | Four-product hub |
 | `support.html` / `privacy.html` | Support and site privacy |
 
-Brand art lives in `assets/brand/` (Mariner icon drives color: navy `#0a1628`, gold `#c9a227`, cream `#f3ead2`).
+Brand art lives in `assets/brand/` (Marine icon drives color: navy `#0a1628`, gold `#c9a227`, cream `#f3ead2`).

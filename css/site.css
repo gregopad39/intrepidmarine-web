@@ -454,6 +454,16 @@ section {
   .product-grid.three {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .product-grid.four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .product-grid.four {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .product {

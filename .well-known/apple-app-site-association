@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "Y5VPN3GMDX.grego.MarineServiceTech"
+        ],
+        "components": [
+          { "/": "/mst" },
+          { "/": "/mst/*" },
+          { "/": "/marine-service-tech.html" }
+        ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "Y5VPN3GMDX.grego.MarineServiceTech.Clip"
+    ]
+  }
+}

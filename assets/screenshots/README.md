@@ -1,13 +1,20 @@
-# Screenshots
+# Screenshots — drop files here, keep these names
 
-Drop marketing screenshots here, then reference them from `index.html` / `products.html`.
+Upload the PNG/JPEG **with these exact filenames**. The site already points at them. Empty slots show a gold “awaiting” frame until the file exists.
 
-Suggested filenames:
+| Filename | What to capture | Best size |
+|----------|-----------------|-----------|
+| `mariner-radar.png` | Intrepid Mariner **radar** on iPhone | ~1170×2532 or a 9:19 crop, under 500 KB |
+| `mariner-log.png` | Captain’s log or skipper inventory | same |
+| `mst-schedule.png` | MST **Schedule** board on **iPad** | ~2048×1536 or 4:3 landscape |
+| `mst-jobs.png` | MST **Jobs** list on iPhone | phone portrait |
+| `mst-workorder-pdf.png` | Work-order **PDF with letterhead** (HIN visible) | screenshot of the PDF page |
+| `valet-jobs.png` | Service Valet jobs or schedule | phone portrait |
 
-- `intrepid-mariner-radar.png`
-- `intrepid-mariner-captains-log.png`
-- `crspit-inventory.png`
-- `mst-job-board.png`
-- `servicetech-trades.png`
+Optional looping hero (homepage):
 
-Recommended: 1600×900 or phone frames at 3x. Keep under ~500 KB each when possible.
+| Filename | What |
+|----------|------|
+| `../hero/hero-loop.mp4` | 6–10 s loop: radar sweep, job card, or PDF. Silent. Under ~2 MB. Poster uses `mariner-radar.png`. |
+
+Tips: crop chrome you do not want, export JPEG if PNG is huge, avoid prices on screen.

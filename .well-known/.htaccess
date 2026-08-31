@@ -1,0 +1,5 @@
+# Apple App Site Association must be served as JSON with no file extension.
+<Files "apple-app-site-association">
+  ForceType application/json
+  Header set Content-Type "application/json"
+</Files>

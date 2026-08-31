@@ -1,17 +1,11 @@
-# Intrepid Marine LLC — marketing site
+# Intrepid Marine LLC — intrepidmarine.net
 
-Prototype website for **Intrepid Marine LLC** and domain **intrepidmarine.net**.
+Marketing site for **Intrepid Marine LLC**: a small software company in the commercial marine space, plus consulting.
 
-Products featured:
-
-- **Intrepid Mariner**
-- **CRS**
-- **Marine Service**
-- **Service Tech** (Service Valet brand)
+**Showcase product:** Intrepid Mariner  
+**Also listed:** Marine Service Tech, Service Valet
 
 ## Local preview
-
-Open `index.html` in a browser, or:
 
 ```bash
 cd /Users/greg/Developer/intrepidmarine-web
@@ -19,24 +13,37 @@ python3 -m http.server 8080
 # → http://localhost:8080
 ```
 
-## GitHub Pages
+## Publish to cPanel
 
-1. Repo should be public (or private with Pages if your plan allows).
-2. Settings → Pages → Source: **Deploy from a branch** → `main` / `/ (root)`.
-3. Site URL will look like: `https://gregopad39.github.io/intrepidmarine-web/`
+Upload these into the domain document root (usually `public_html`):
 
-Custom domain later:
+- `.well-known/apple-app-site-association` (no `.json` suffix; required for the MST App Clip)
+- `.well-known/.htaccess` (serves that file as `application/json`)
+- `mst/index.html` (App Clip invocation URL: `https://intrepidmarine.net/mst`)
+- `index.html` (and the other HTML pages, `css/`, `js/`, `assets/`)
+- `assets/screenshots/` — drop PNG/JPEGs using the names in `assets/screenshots/README.md`
+- optional `assets/hero/hero-loop.mp4` for the homepage radar/job loop
+- `intrepid-mariner.html`
+- `marine-service-tech.html`
+- `service-valet.html`
+- `consulting.html`
+- `products.html`
+- `support.html`
+- `privacy.html`
+- `css/` `js/` `assets/`
 
-1. In Pages settings, set custom domain `intrepidmarine.net` (and `www` if desired).
-2. At GoDaddy, point DNS:
-   - **A records** for apex `@` to GitHub Pages IPs (GitHub docs list current IPs), **or**
-   - **CNAME** for `www` → `gregopad39.github.io`
-3. Wait for DNS + TLS certificate (can take minutes to hours).
+Keep folder structure. Do not wrap the files in an extra `intrepidmarine-web/` directory on the server.
 
-## Screenshots
+## Pages
 
-Put images in `assets/screenshots/` and wire them into the product cards when ready.
+| File | Role |
+|------|------|
+| `index.html` | Company + Intrepid Mariner showcase |
+| `intrepid-mariner.html` | Showcase product |
+| `marine-service-tech.html` | Yard / tech app |
+| `service-valet.html` | Land trades app |
+| `consulting.html` | Advisory and branded editions |
+| `products.html` | Three-product hub |
+| `support.html` / `privacy.html` | Support and site privacy |
 
-## Contact placeholder
-
-`hello@intrepidmarine.net` — create the mailbox at GoDaddy / email host when DNS is stable.
+Brand art lives in `assets/brand/` (Mariner icon drives color: navy `#0a1628`, gold `#c9a227`, cream `#f3ead2`).

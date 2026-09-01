@@ -2,7 +2,7 @@
 
 Marketing site for **Intrepid Marine LLC**: a small software company in the commercial marine space, plus consulting.
 
-**Products:** IntrepidMarine · MarineServiceTech · ServiceValet · CRS
+**Products:** IntrepidMarine · MarineServiceTech · ServiceValet · CRSpit
 
 ## Local preview
 
@@ -42,7 +42,7 @@ Keep folder structure. Do not wrap the files in an extra `intrepidmarine-web/` d
 | `intrepid-marine.html` | IntrepidMarine |
 | `marine-service-tech.html` | MarineServiceTech |
 | `service-valet.html` | ServiceValet |
-| `crs.html` | CRS |
+| `crs.html` | CRSpit |
 | `consulting.html` | Advisory and branded editions |
 | `products.html` | Four-product hub |
 | `support.html` / `privacy.html` | Support and site privacy |

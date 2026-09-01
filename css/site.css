@@ -1,4 +1,4 @@
-/* Intrepid Marine LLC — navy / gold, Mariner-led */
+/* Intrepid Marine LLC — navy / gold company, MarineServiceTech showcase */
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 
@@ -16,6 +16,9 @@
   --muted: #5a6a7a;
   --line: rgba(10, 22, 40, 0.1);
   --sea: #1a6b80;
+  --teal: #1ec8d0;
+  --teal-2: #7ae0e6;
+  --teal-dim: rgba(30, 200, 208, 0.16);
   --shadow: 0 18px 40px rgba(10, 22, 40, 0.12);
   --radius: 16px;
   --max: 1140px;
@@ -282,13 +285,71 @@ a:hover {
   overflow: hidden;
   color: var(--cream);
   background:
-    linear-gradient(rgba(201, 162, 39, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 162, 39, 0.05) 1px, transparent 1px),
-    radial-gradient(900px 420px at 85% 0%, rgba(201, 162, 39, 0.22), transparent 58%),
-    radial-gradient(700px 380px at 0% 100%, rgba(26, 107, 128, 0.28), transparent 55%),
+    linear-gradient(rgba(30, 200, 208, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 200, 208, 0.045) 1px, transparent 1px),
+    radial-gradient(900px 420px at 88% 0%, rgba(30, 200, 208, 0.22), transparent 58%),
+    radial-gradient(700px 380px at 0% 100%, rgba(201, 162, 39, 0.16), transparent 55%),
     linear-gradient(165deg, #07111d 0%, var(--navy) 48%, #0c2438 100%);
   background-size: 48px 48px, 48px 48px, auto, auto, auto;
   padding: 4.4rem 0 4.2rem;
+}
+
+.hero-product {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 1.1rem;
+  padding: 0.28rem 0.85rem 0.28rem 0.28rem;
+  border: 1px solid rgba(30, 200, 208, 0.4);
+  background: rgba(30, 200, 208, 0.1);
+  border-radius: 999px;
+}
+
+.hero-product img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.hero-product span {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-2);
+}
+
+.hero-devices {
+  display: grid;
+  grid-template-columns: minmax(0, 200px) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.hero-devices .shot-frame.phone {
+  max-width: 200px;
+  margin: 0;
+}
+
+.hero-devices .shot-frame.tablet {
+  max-width: none;
+  width: 100%;
+}
+
+@media (max-width: 919px) {
+  .hero-devices {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-devices .shot-frame.phone {
+    max-width: 240px;
+  }
+
+  .hero-devices .shot-frame.tablet {
+    display: none;
+  }
 }
 
 .hero-grid {
@@ -379,7 +440,9 @@ section {
 /* Showcase product */
 
 .showcase {
-  background: var(--navy);
+  background:
+    radial-gradient(800px 360px at 12% 0%, rgba(30, 200, 208, 0.16), transparent 55%),
+    var(--navy);
   color: var(--cream);
 }
 
@@ -431,8 +494,12 @@ section {
   height: 8px;
   margin-top: 0.5rem;
   border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 0 4px var(--gold-dim);
+  background: var(--teal);
+  box-shadow: 0 0 0 4px var(--teal-dim);
+}
+
+.showcase .kicker {
+  color: var(--teal-2);
 }
 
 .muted-on-dark {
@@ -464,6 +531,11 @@ section {
 
   .product-grid.four {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-grid.four .product-top {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -543,6 +615,15 @@ section {
 
 .product-actions {
   margin-top: auto;
+}
+
+.product.featured {
+  border-color: rgba(30, 200, 208, 0.4);
+  box-shadow: var(--shadow), 0 0 0 1px rgba(30, 200, 208, 0.18);
+}
+
+.product.featured .tag {
+  color: #0e8f96;
 }
 
 /* Company + consulting */
@@ -827,8 +908,18 @@ section {
   padding: 0.35rem 0.7rem;
 }
 
+.hero .kicker {
+  color: var(--teal-2);
+}
+
 .hero .badge {
   color: var(--gold-2);
+}
+
+.hero .proof-code,
+.showcase code {
+  color: var(--teal-2);
+  white-space: nowrap;
 }
 
 .page-hero .badge-row {
@@ -882,6 +973,10 @@ section {
 @media (min-width: 800px) {
   .shot-rail {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shot-rail:has(> :only-child) {
+    grid-template-columns: 1fr;
   }
 }
 

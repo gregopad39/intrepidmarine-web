@@ -2,7 +2,7 @@
 
 Marketing site for **Intrepid Marine LLC**: a small software company in the commercial marine space, plus consulting.
 
-**Products:** IntrepidMarine · MarineServiceTech · ServiceValet · CRSpit
+**Products:** MarineServiceTech (showcase) · IntrepidMarine · ServiceValet · CRSpit
 
 ## Local preview
 
@@ -21,7 +21,7 @@ Upload these into the domain document root (usually `public_html`):
 - `mst/index.html` (App Clip invocation URL: `https://intrepidmarine.net/mst`)
 - `index.html` (and the other HTML pages, `css/`, `js/`, `assets/`)
 - `assets/screenshots/` — drop PNG/JPEGs using the names in `assets/screenshots/README.md`
-- optional `assets/hero/hero-loop.mp4` for the homepage radar/job loop
+- optional `assets/hero/hero-loop.mp4` (unused on the current MST-led homepage)
 - `intrepid-marine.html`
 - `marine-service-tech.html`
 - `service-valet.html`
@@ -38,9 +38,9 @@ Keep folder structure. Do not wrap the files in an extra `intrepidmarine-web/` d
 
 | File | Role |
 |------|------|
-| `index.html` | Company + IntrepidMarine showcase |
+| `index.html` | Company + MarineServiceTech showcase |
+| `marine-service-tech.html` | MarineServiceTech (showcase product) |
 | `intrepid-marine.html` | IntrepidMarine |
-| `marine-service-tech.html` | MarineServiceTech |
 | `service-valet.html` | ServiceValet |
 | `crs.html` | CRSpit |
 | `consulting.html` | Advisory and branded editions |

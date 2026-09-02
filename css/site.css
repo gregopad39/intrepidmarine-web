@@ -1152,3 +1152,102 @@ section {
   text-transform: uppercase;
   color: var(--gold-2);
 }
+
+/* CRSpit product modules */
+
+.crs-teal {
+  --crs: #128a82;
+  --crs-2: #1aa89a;
+}
+
+.tab-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1.6rem;
+}
+
+.tab-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.42rem 0.75rem;
+  border-radius: 999px;
+  background: #128a82;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.tab-chip svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.module-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 1.6rem;
+}
+
+@media (min-width: 700px) {
+  .module-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1040px) {
+  .module-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.module-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.15rem 1.2rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.module-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #128a82;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.module-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.module-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.module-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.1rem;
+  margin: 0.4rem 0 0;
+}
+
+.link-row a {
+  font-weight: 600;
+  font-size: 0.92rem;
+}

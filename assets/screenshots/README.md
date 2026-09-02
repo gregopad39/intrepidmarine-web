@@ -10,6 +10,9 @@ Upload the PNG/JPEG **with these exact filenames**. The site already points at t
 | `mst-jobs.jpg` | MST **Jobs** list on iPhone | phone portrait |
 | `mst-workorder-pdf.jpg` | Work-order **PDF with letterhead** (HIN visible) | screenshot of the PDF page |
 | `valet-jobs.jpg` | Service Valet jobs or schedule | phone portrait |
+| `crs-inventory.jpg` | CRSpit **Inventory** tab | phone portrait |
+| `crs-garage-sale.jpg` | CRSpit **Garage Sale** | phone portrait |
+| `crs-field-report.jpg` | CRSpit **Field report** type picker | phone portrait |
 
 Optional looping hero (homepage):
 
